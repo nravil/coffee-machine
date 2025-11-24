@@ -15,7 +15,7 @@ import java.util.Optional;
 public interface CoffeeRepository extends JpaRepository<Coffee, Long> {
     // ВАЖНО: SPRING DATA JPA АВТОМАТИЧЕСКИ СОЗДАЕТ МЕТОДЫ!
     // Мы просто объявляем метод, а Spring сам генерирует SQL запрос
-    Optional<Coffee> findByName(Coffee name);
+    Optional<Coffee> findByName(String name);
     // Spring видит "findByName" и понимает:
     // "Нужно сделать: SELECT * FROM coffees WHERE name = ?"
 }

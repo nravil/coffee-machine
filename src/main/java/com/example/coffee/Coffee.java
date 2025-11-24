@@ -27,7 +27,7 @@ public class Coffee {
 
 
 
-    public Coffee(int coffeeBeans, String name, int milk, int water, int sugar) {
+    public Coffee(String name,int coffeeBeans, int milk, int water, int sugar) {
         this.coffeeBeans = coffeeBeans;
         this.name = name;
         this.milk = milk;
